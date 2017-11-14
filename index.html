@@ -1,0 +1,27 @@
+<html>
+
+  <head>
+    <script type='text/javascript'>
+function ABTest(){
+  var link1="https://docs.google.com/forms/d/e/1FAIpQLSeyy1SkTJtLHya7jDaZTKL2zj4jAc7J65crxl9JwD8LrW9r3Q/viewform?usp=sf_link"
+  var link2="https://docs.google.com/forms/d/e/1FAIpQLSfFRa0XE_-OO0PXu7iT3iJMtNQ2NquAqPCXGdnaS2BaW7qfTA/viewform?usp=sf_link"
+  if (Math.random() < 0.5) { // do something cleverer here
+    window.location=link1
+  } else {
+    window.location=link2
+  }
+}
+    </script>
+  </head>
+
+  <body>
+    <p>
+      Tack för att du vill delta i denna studie. Undersökningen är helt anonym och
+      du kan när som helst avbryta ditt deltagande genom att stänga webbläsaren.
+    </p>
+    <p>
+    <button onclick="ABTest()">Starta undersökningen</button>
+    </p>
+  </body>
+
+</html>
